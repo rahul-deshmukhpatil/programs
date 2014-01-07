@@ -29,14 +29,14 @@ class sample
 		~sample() { delete dataPtr; data =0; log(DEBUG, "Sample destructor %d:%u\n", data, dataPtr);}
 		sample(const sample &obj)
 		{
-			log(DEBUG, "sample copy constructor");
+			log(DEBUG, "sample copy constructor\n");
 			data = obj.data;
 			dataPtr = obj.dataPtr;
 		}
 
 		sample& operator =(const sample &obj)
 		{
-			log(DEBUG, "sample = operator");
+			log(DEBUG, "sample = operator\n");
 			data = obj.data;
 			dataPtr = obj.dataPtr;
 			return *this;
